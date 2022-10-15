@@ -12,7 +12,7 @@
     
     /*Fondos*/
     --fondo-main: linear-gradient(to bottom, #eeeef0, #ffffff);
-    --fondo-header: linear-gradient(to left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    --fondo-header: linear-gradient(to top, #757f9a, #d7dde8);
     --toast-color: linear-gradient(to right, #309c05, #73b109); 
 
     /*Espaciado*/
@@ -68,7 +68,10 @@ a{
 } */
 
 main {
-    background: var(--fondo-main);
+    background-image:url(../img/erik-mclean-ZRns2R5azu0-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -100,9 +103,10 @@ main {
     width: 12em;
     height: auto;
     background-color: var(--card-color);
-    border-radius: 8px;
-    border: black solid 1px;
+    border-radius: 10px;
+    border: 5px outset lightslategray;
     margin: var(--spacing-xsmall); 
+    background-color: #ffffff;
        
 }
 
@@ -132,7 +136,8 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding: var(--spacing-small) 0;  
-    flex-wrap:wrap;        
+    flex-wrap:wrap; 
+    background: var(--fondo-header);       
 }
 
 .footer__logo{

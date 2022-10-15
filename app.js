@@ -67,7 +67,7 @@ function mostrarProductos (productos) {
       templateCard.querySelector('h5').textContent = producto.nombre
       templateCard.querySelector('span').textContent = producto.precio
       templateCard.querySelector('img').setAttribute("src", producto.img)
-      templateCard.querySelector(".btn-primary").dataset.id = producto.id
+      templateCard.querySelector("#agregar").dataset.id = producto.id
       const clone = templateCard.cloneNode(true)
       contenedorProductos.appendChild(clone)
   })
