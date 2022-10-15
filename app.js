@@ -303,7 +303,10 @@ function comprar(e){
     },
     willClose: () => {
       clearInterval(timerInterval)
-      window.location.href = "./index.html"
+      const modalResumen=document.getElementById('exampleModal2')
+      const modal = bootstrap.Modal.getInstance(modalResumen)
+      modal.hide()
+      
     }
   })    
   carrito = {}  
